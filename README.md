@@ -39,6 +39,3 @@ For the Prostate dataset, the indicators use internal clustering evaluation indi
 file when applying the Prostate dataset.
 6. The “r” in line 35 of the “main_MISF.m” file needs to be larger than the number of target clusters in the application dataset.
 7. The iteration threshold sita of the clustering_MISF function should be set according to the demand, and is usually set to 1.0e-3 or 1.0e-6.
-
-
-    result <- scTsI(data_sc,data_bulk)
