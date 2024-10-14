@@ -12,7 +12,7 @@ The inputs include multi-omics data or spatial transcriptome data.
     X2=DNA;
     true_label=real_label;
 ### 3.2 Run MISF
-Setting the number of clusters K.
+Set the number of clusters K.
 
     run "main_MISF.m"
 ## 4.Notes
@@ -20,8 +20,7 @@ Multi-omics data:
 
 1. For algorithm implementation, please run the file “main_MISF.m”.
 2. The number of data clusters is set as: 3 for scCancer, 2 for mESC, 9 for Pbmc and 14 for Kidney.
-3. The RNA modality is labeled as “RNA”, the ATAC modality as “ATAC”, and the DNA modality as “DNA” for all data sets. Different datasets have different modal types, so when introducing the dataset, please note that.
-When introducing datasets, pay attention to the assignment of X1 and X2, and pay special attention to the assignment of X2 to DNA for mESC.
+3. The RNA modality is labeled as “RNA”, the ATAC modality as “ATAC”, and the DNA modality as “DNA” for all data sets. Different datasets have different modal types, so when introducing the dataset, pay attention to the assignment of X1 and X2, and the assignment of X2 to DNA for mESC.
 4. scCancer and mESC datasets have real_label; Pbmc and Kidney datasets don't have real_label, so we should pay attention to the operation of true_label assignment when introducing data.
 5. For scCancer and mESC datasets, external clustering evaluation indicators are used and the results can be obtained directly. For Pbmc and Kidney datasets, internal clustering evaluation indicators are used and the results can be obtained by running the “internal_evaluate.m” file and saving the “F” and “prel” variables. In addition, for Pbmc and Kidney datasets, it is necessary to hide the external evaluation indicator codes in the “main_MISF” file.
 6. The “r” in the “main_MISF.m” file should be larger than the number of target clusters of dataset.
