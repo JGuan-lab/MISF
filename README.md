@@ -1,7 +1,7 @@
 # MISF
 ## 1.Introduction
 MISF is a Multimodal data Integration algorithm based on adaptive Similarity network learning and matrix Factorization. MISF adaptively integrates multimodal data and learns the lower-dimensional representations of cells and genes.
-## 2.Requirements:
+## 2.Requirements
    Matlab2023
 ## 3.Quick start
 ### 3.1 Prepare data
