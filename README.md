@@ -14,7 +14,7 @@ The inputs include multi-omics data or spatial transcriptome data.
 ### 3.2 Run MISF
 Setting the number of clusters K.
 
-run "main_MISF.m"
+    run "main_MISF.m"
 ## 4.Notes
 Multi-omics data:
 
