@@ -69,8 +69,12 @@ A{1}=W1;A{2}=W2;
 [M{2}] = PMI(A{2},1);
 k=2;k2=2;
 alpha=1e-2;
+beita = 1;
+gama = 1;
 %%%%%%%%%clustering_MISFThe last term of the function input is the threshold sita
-[P,S,Q1,F,Q2,Q3_1,Q3_2,err1,err2 ]=clustering_MISF(XX,M,k,k2,alpha,X1,X2,600,1.000000e-3); %%% Call the main function to solve the variables
+
+[P, S, Q1, F, Q2, Q3_1, Q3_2, err1, err2] = clustering_MISF(XX, M, k, k2, alpha, beita, gama, X1, X2, 100, 1.000000e-3); %%% Call the main function to solve the variables
+
 
 %%%%%%%%%%%% Clustering cell type label
     for e=1:size(F,2) 

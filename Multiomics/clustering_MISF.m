@@ -1,4 +1,4 @@
-function  [P,S,Q1,F,Q2,Q3_1,Q3_2,err1,err2]=clustering_MISF(X,M,k,k2,alpha,X1,X2,iter,sita)
+function  [P,S,Q1,F,Q2,Q3_1,Q3_2,err1,err2]=clustering_MISF(X,M,k,k2,alpha,beita,gama,X1,X2,iter,sita)
 %%%%The model----------------
 % min{P[l],S[l],S} sumTr(P[l]'X[l]L[l]X[l]'P[l])+alpha
 % sum||S[l]||^2+sum(\|S[l]-B[l]F\|^2+\|M[l]-H[l]F\|^2+\|X1-Q3_1F\|^2+\|X2-Q3_2F\|^2)
@@ -107,7 +107,7 @@ for o = 1:iter
     F=F.*((ff1)./(ff2));
 
 %%%%%%%%%%%%%%%-------------Error-----------------------
-    ee =norm(S{1}-Q1{1}*F,'fro')+norm(S{2}-Q1{2}*F,'fro')+norm(M{1}-Q2{1}*F,'fro')+norm(M{2}-Q2{2}*F,'fro')+norm(X1-Q3_1*F,'fro')+norm(X2-Q3_2*F,'fro');
+    ee =beita*norm(S{1}-Q1{1}*F,'fro')+beita*norm(S{2}-Q1{2}*F,'fro')+gama*norm(M{1}-Q2{1}*F,'fro')+gama*norm(M{2}-Q2{2}*F,'fro')+norm(X1-Q3_1*F,'fro')+norm(X2-Q3_2*F,'fro');
     err1(o,1)=ee;
     %disp([' Iterations ' num2str(o) ' temp1 ' num2str(ee)]);
     %Calculation of relative error
