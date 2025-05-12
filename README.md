@@ -15,7 +15,7 @@ The inputs include multi-omics data or spatial transcriptome data.
     true_label=real_label;
 ### 3.2 Set the number of clusters K
 If you are sure about the value of k, you can just set  
-```matlab
+```
    k = number
 ``` 
 For data that do not provide a factor number k that can be drawn upon, a simple determination of the value of k can be performed by estimate_k_by_svd function.  
