@@ -14,9 +14,9 @@ The inputs include multi-omics data or spatial transcriptome data.
     X2=DNA;
     true_label=real_label;
 ### 3.2 Set the number of clusters K
-If you are sure about the value of k, you can just set 
+If you are sure about the value of k, you can just set  
 'k = number'
-For data that do not provide a factor number k that can be drawn upon, a simple determination of the value of k can be performed by estimate_k_by_svd function.
+For data that do not provide a factor number k that can be drawn upon, a simple determination of the value of k can be performed by estimate_k_by_svd function.  
 'k = estimate_k_by_svd(X1)'
 ### 3.3 Run MISF
     run "main_MISF.m"
