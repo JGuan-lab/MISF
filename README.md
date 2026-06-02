@@ -1,11 +1,14 @@
 # MISF
 
-建模：针对基因调控网络构建中基因耦合关系复杂等复杂动态系统建模难题，提出了复杂耦合关联系统的建模方法，建立了融合数据和知识的复杂动态网络系统模型，提升了基因调控网络动态系统模型的准确性和鲁棒性。
 
 ## 1. Introduction
 MISF is a Multimodal data Integration algorithm based on adaptive Similarity network learning and matrix Factorization. MISF adaptively integrates multimodal data and learns the lower-dimensional representations of cells and genes.
 
 The analyzed data can be accessed at: https://zenodo.org/records/15386974
+
+MISF corresponds to the following paper:
+2.	Fengfan Zhou, Xinqi Chen, Yusheng Jiang, Jinting Guan* (2026). MISF: a multimodal data integration method based on adaptive similarity learning and matrix factorization. IEEE Transactions on Computational Biology and Bioinformatics, 23(1): 432-443.
+
 ## 2. Requirements
    Matlab2023
 ## 3. Quick start
