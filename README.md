@@ -7,7 +7,8 @@ MISF is a Multimodal data Integration algorithm based on adaptive Similarity net
 The analyzed data can be accessed at: https://zenodo.org/records/15386974
 
 MISF corresponds to the following paper:
-2.	Fengfan Zhou, Xinqi Chen, Yusheng Jiang, Jinting Guan* (2026). MISF: a multimodal data integration method based on adaptive similarity learning and matrix factorization. IEEE Transactions on Computational Biology and Bioinformatics, 23(1): 432-443.
+
+Fengfan Zhou, Xinqi Chen, Yusheng Jiang, Jinting Guan* (2026). MISF: a multimodal data integration method based on adaptive similarity learning and matrix factorization. IEEE Transactions on Computational Biology and Bioinformatics, 23(1): 432-443.
 
 ## 2. Requirements
    Matlab2023
